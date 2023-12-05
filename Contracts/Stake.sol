@@ -13,7 +13,7 @@ contract Stake is Context {
     Token private _token;
     uint256 private totalValueLocked;
 
-    constructor(USDT USDT_){
+    constructor(Token token_){
         _token = token_;
         owner = _msgSender();
     }
